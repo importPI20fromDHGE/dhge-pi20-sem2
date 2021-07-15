@@ -28,31 +28,34 @@ jobs:
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
         with:
-          args: --output=output/ABWL-LEDER.pdf --resource-path=ABWL-LEDER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ABWL-LEDER/README.md
+          args: --output=output/ALGO.pdf --resource-path=ALGO/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ALGO/ALGO.md
       - uses: docker://rstropek/pandoc-latex:latest # generate ASM-GUENTHER pdf
         with:
-          args: --output=output/ASM-GUENTHER.pdf --resource-path=ASM-GUENTHER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ASM-GUENTHER/README.md
+          args: --output=output/INV-ZUS.pdf --resource-path=INV/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose INV/README.md
       - uses: docker://rstropek/pandoc-latex:latest # generate DBS-DORENDORF pdf
         with:
-          args: --output=output/DBS-DORENDORF.pdf --resource-path=DBS-DORENDORF/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose DBS-DORENDORF/README.md
+          args: --output=output/INV.pdf --resource-path=INV/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose INV/INV.md
       - uses: docker://rstropek/pandoc-latex:latest # generate PRO-KASCHE pdf
         with:
-          args: --output=output/PRO-KASCHE.pdf --resource-path=PRO-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose PRO-KASCHE/README.md
+          args: --output=output/MAT.pdf --resource-path=MAT/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MAT/MAT.md
       - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
         with:
-          args: --output=output/SWE-KASCHE.pdf --resource-path=SWE-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/README.md
+          args: --output=output/BS.pdf --resource-path=RES/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose RES/RES.md
       - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
         with:
-          args: --output=output/SWS-KUSCHE.pdf --resource-path=SWS-KUSCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWS-KUSCHE/README.md
+          args: --output=output/BS-ZUS.pdf --resource-path=RES/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose RES/README.md
       - uses: docker://rstropek/pandoc-latex:latest # generate EMB-GUENTHER pdf
         with:
-          args: --output=output/EMB-GUENTHER.pdf --resource-path=EMB-GUENTHER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose EMB-GUENTHER/README.md
+          args: --output=output/BS-LKF.pdf --resource-path=BS/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose BS/LKF.md
       - uses: docker://rstropek/pandoc-latex:latest # generate OOP-CASSELT pdf
         with:
-          args: --output=output/OOP-CASSELT.pdf --resource-path=OOP-CASSELT/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose OOP-CASSELT/README.md
+          args: --output=output/LABOR1.pdf --resource-path=SCH/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SCH/SCH.md
       - uses: docker://rstropek/pandoc-latex:latest # generate MPP-PI pdf
         with:
-          args: --output=output/MPP-PI.pdf --resource-path=MPP-PI/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MPP-PI/README.md
+          args: --output=output/LABOR2.pdf --resource-path=SCH/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SCH/GET.md
+      - uses: docker://rstropek/pandoc-latex:latest 
+        with:
+          args: --output=output/SWE.pdf --resource-path=SWE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE/SWE.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
@@ -74,7 +77,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/ABWL-LEDER.pdf
+          files: output/ALGO.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -83,7 +86,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/DBS-DORENDORF.pdf
+          files: output/INV-ZUS.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -92,7 +95,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/ASM-GUENTHER.pdf
+          files: output/INV.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -101,7 +104,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/SWE-KASCHE.pdf
+          files: output/MAT.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -110,7 +113,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/SWS-KUSCHE.pdf
+          files: output/BS.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -119,7 +122,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/PRO-KASCHE.pdf
+          files: output/BS-ZUS.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -128,7 +131,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/EMB-GUENTHER.pdf
+          files: output/BS-LKF.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -137,7 +140,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/OOP-CASSELT.pdf
+          files: output/LABOR1.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
@@ -146,5 +149,14 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/MPP-PI.pdf
+          files: output/LABOR2.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/SWE.pdf
           allow_override: true
