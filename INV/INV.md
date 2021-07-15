@@ -340,11 +340,11 @@ $$T=(I,B,Q,\delta,q_0,F)$$
 
 Turing-Maschinen können entweder Funktionen berechnen oder entscheiden, ob bestimmte Eingabeworte als Worte einer Sprache akzeptiert werden. Dabei gelten die folgenden Definitionen:
 
-- Funktion $f:I^\*\rightarrow I^\*$ heißt total rekursiv (berechenbar), wenn eine Turing-Maschine existiert, die aus einer Eingabe $x$ den Funktionswert $f(x)$ berechnet
+- Funktion $f:I^*\rightarrow I^*$ heißt total rekursiv (berechenbar), wenn eine Turing-Maschine existiert, die aus einer Eingabe $x$ den Funktionswert $f(x)$ berechnet
 
 - Funktion $f:N^k\rightarrow N$ heißt total rekursiv, wenn eine Turing-Maschine existiert, die für Eingaben vom Typ $bin(i_1), bin(i_2), \dots, bin(i_k)$ mit einem Ergebnis $bin(m)$ stoppt, wenn $m = ƒ( i_1, \dots , i_k)$
 
-- Eine Sprache $L \subset I^\*$ heißt rekursiv (entscheidbar), wenn eine Turing-Maschine existiert, die für alle Eingaben stoppt und das Eingabewort $w$ akzeptiert, wenn $w \in L$
+- Eine Sprache $L \subset I^*$ heißt rekursiv (entscheidbar), wenn eine Turing-Maschine existiert, die für alle Eingaben stoppt und das Eingabewort $w$ akzeptiert, wenn $w \in L$
 
 - Eine Sprache $L \subset I^*$ heißt rekursiv aufzählbar (semientscheidbar), wenn eine Turing-Maschine existiert, die genau die Eingaben $w$ akzeptiert, die aus $L$ sind
 
