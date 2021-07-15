@@ -47,7 +47,7 @@ jobs:
           args: --output=output/BS-ZUS.pdf --resource-path=RES/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose RES/README.md
       - uses: docker://rstropek/pandoc-latex:latest # generate EMB-GUENTHER pdf
         with:
-          args: --output=output/BS-LKF.pdf --resource-path=BS/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose BS/LKF.md
+          args: --output=output/BS-LKF.pdf --resource-path=BS/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose RES/LKF.md
       - uses: docker://rstropek/pandoc-latex:latest # generate OOP-CASSELT pdf
         with:
           args: --output=output/LABOR1.pdf --resource-path=SCH/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SCH/SCH.md
