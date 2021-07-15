@@ -1204,7 +1204,7 @@ $$T=(S,\Sigma,\Gamma,S_0,\#,\delta,F)$$
 	- $B$ ist der Befehlszähler
 	- $C_0$ ist der Akkumulator
 	- Jedes der Register $C_n, n \geq 1$ ist ein Speicherregister
-	- jedes Register enthält als Wert eine Zahl aus $\N$
+	- jedes Register enthält als Wert eine Zahl aus N
 - Unter einer Konfiguration der Registermaschine verstehen wir das unendliche Tupel ($b, c_0, c_1, \dots, c_n$)
 - Das Programm ist eine endliche Folge von Befehlen
 
