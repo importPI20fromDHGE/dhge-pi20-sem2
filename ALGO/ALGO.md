@@ -1110,7 +1110,7 @@ $$A\rightarrow a; A\rightarrow Ba; A\rightarrow \varepsilon; A,B, \in N$$
 - Sei $L$ eine reguläre Sprache, dann gibt es eine Zahl $n$, so dass sich alle Wörter $x \in L \text{mit} |x| \geq n$ zerlegen lassen in $x=uvw$, so dass folgene Eigenschaften erfüllt sind
 	- $|v|\geq 1$
 	- $|uv|\leq n$
-	- \forall i \in \N \text{gilt:} uv^iw\in L
+	- $\forall i \in N \text{gilt:} uv^iw\in L$
 - **Allgemein:** Hat ein Automat n Zustände, so erreicht man spätestens nach dem n-ten Symbol einen bereits früher besuchten Zustand.
 - Um Wörter der Länge $n$ und länger lesen zu können, muss eine Schleife im Automaten existieren (Schleifen beliebig oft durchlaufbar)
 
