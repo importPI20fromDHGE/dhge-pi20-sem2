@@ -819,7 +819,7 @@ Der **Füllfaktor** $\alpha=\frac{n}{m}$ beschreibt die Anzahl die in einer Hash
 - Prinzip: Finden der noch nciht besetzten Array-Elemente in der Hash-Tabelle nach festgelegter **Sondierungsfolge** $s(j,k)$ (ein Platz muss immer frei bleiben!)
 - Lineares Sondieren: $s(j,k)=j$
 - Quadratisches Sondieren: $s(j,k)=(\lceil\frac{j}{2}\rceil)^2 \times (-1)^j$
-- Double Hashing: $s(j,k)= j \times h^'(k)$ (h' = 2. Hashfunktion)
+- Double Hashing: s(j,k)= j \times h^'(k) (h' = 2. Hashfunktion)
 
 ### Fortsetzung
 
